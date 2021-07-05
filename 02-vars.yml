@@ -22,6 +22,7 @@
 #      msg: Hello {{ URL_CLI }}
 - name: Demo of vars on Play level
   hosts: all
+  become: yes
   tasks:
     - name: inven variable
       debug:
