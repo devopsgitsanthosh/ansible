@@ -2,6 +2,6 @@
   hosts: all
   roles:
     - sample
-- name: print variable
-  debug:
-    msg: variable {{ URL }}
+      - name: print variable
+       debug:
+         msg: variable {{ URL }}
