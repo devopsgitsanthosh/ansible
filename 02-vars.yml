@@ -1,7 +1,8 @@
-- hosts: all
-  become: yes
+- name: Demo of vars on Play level
+  hosts: all
   vars:
     URL_PLAY: play.example.com
   tasks:
-    debug: Play message vars
-      msg: hello {{ URL_PLAY }}
+    - name: Print Variable Value
+      debug:
+        msg: Hello {{ URL_PLAY }}
