@@ -4,4 +4,4 @@
     URL_PLAY: play.example.com
   tasks:
     debug: Play message vars
-     msg: {{ URL_PLAY }}
+      msg: hello {{ URL_PLAY }}
