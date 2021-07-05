@@ -23,5 +23,6 @@
 - name: Demo of vars on Play level
   hosts: all
   tasks:
+    - name: inven variable
       debug:
         msg: HELLO {{ URL_INV }}
