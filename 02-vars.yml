@@ -24,4 +24,4 @@
   hosts: all
   tasks:
       debug:
-        msg: {{ URL_INV }}
+        msg: HELLO {{ URL_INV }}
