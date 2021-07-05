@@ -9,3 +9,8 @@
     - name: Print Variable agin
       debug:
         msg: Bye {{ URL_PLAY }}
+    - name: varibale in task level
+      debug:
+        msg: Hello {{ URL_TASK1 }}
+      vars:
+        URL_TASK1: task1.example.com
