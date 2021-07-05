@@ -1,5 +1,4 @@
-- name: using vars
-  hosts: all
+- hosts: all
   become: yes
   vars:
     URL_PLAY: play.example.com
