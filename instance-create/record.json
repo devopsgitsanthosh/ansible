@@ -1,1 +1,11 @@
 {
+  "Comment": "CREATE/DELETE/UPSERT a record ",
+  "Changes": [{
+    "Action": "UPSERT",
+    "ResourceRecordSet": {
+      "Name": "COMPONENT.linkinone.ml",
+      "Type": "A",
+      "TTL": 300,
+      "ResourceRecords": [{ "Value": "IPADDRESS"}]
+    }}]
+}
