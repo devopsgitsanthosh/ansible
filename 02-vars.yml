@@ -15,5 +15,5 @@
       vars:
         URL_TASK1: task1.example.com
     - name: varibale in task level
-        debug:
-          msg: Hello {{ URL_TASK1 }}
+      debug:
+        msg: Hello {{ URL_TASK1 }}
