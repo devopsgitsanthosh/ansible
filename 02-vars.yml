@@ -81,6 +81,14 @@
     - name: Print URL from fact
       debug:
         msg: fact, {{ ansible_bios_version }}
-
+- name: Demo on vars from dynamic
+  hosts: all
+  tasks:
+    - name: Print out
+      shell: uptime
+      register: OUT
+    - name: print OUT
+      debug:
+        msg: "{{OUT}}"
 
 
