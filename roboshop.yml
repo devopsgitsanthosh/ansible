@@ -1,0 +1,4 @@
+- name: install nginx
+  hosts: forntend
+  roles:
+    - frontend
