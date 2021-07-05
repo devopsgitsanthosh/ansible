@@ -90,5 +90,14 @@
     - name: print OUT
       debug:
         msg: "{{OUT}}"
+- name: Demo on vars from dynamic
+  hosts: all
+  tasks:
+    - name: Print out
+      set_fact:
+         update_output: "{{OUT.stdout}}"
+    - name: show out put of fact
+      debug:
+        msg: setfact {{ OUT.stdout }}
 
 
