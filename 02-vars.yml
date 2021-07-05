@@ -17,6 +17,11 @@
     - name: varibale in task level
       debug:
         msg: Hello {{ URL_PLAY }}
-    - name: varibale enter through CLI
-      debug:
-        msg: Hello {{ URL_CLI }}
+#   - name: varibale enter through CLI
+ #    debug:
+ #      msg: Hello {{ URL_CLI }}
+- name: Demo of vars on Play level
+  hosts: all
+  tasks:
+    debug:
+      msg: {{ URL_INV }}
