@@ -1,0 +1,7 @@
+- name: using vars
+  hosts: all
+  vars:
+    URL_PLAY: play.example.com
+  tasks:
+    debug: Play message vars
+      msg: {{ URL_PLAY }}
