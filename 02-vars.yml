@@ -75,7 +75,7 @@
     - name: Print promt messafe
       debug:
         msg: Hello, {{ prompt }}
-name: Demo on vars from fact
+- name: Demo on vars from fact
   hosts: all
   tasks:
     - name: Print URL from fact
