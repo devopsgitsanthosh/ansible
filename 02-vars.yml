@@ -6,24 +6,55 @@
     - name: Print Variable Value
       debug:
         msg: Hello {{ URL_PLAY }}
-    - name: Print Variable agin
+
+    - name: Print Variable again
       debug:
         msg: Bye {{ URL_PLAY }}
-    - name: varibale in task level
+
+## If you declare a variable in play level then you can access the value across the play tasks.
+
+- name: Demo on vars in Tasks level
+  hosts: all
+  tasks:
+    - name: Print task level variable
       debug:
         msg: Hello {{ URL_TASK1 }}
       vars:
         URL_TASK1: task1.example.com
-    - name: varibale in task level
-      debug:
-        msg: Hello {{ URL_PLAY }}
-#   - name: varibale enter through CLI
-#    debug:
-#      msg: Hello {{ URL_CLI }}
-- name: Demo of vars on Play level
+
+#    - name: Print task level variable
+#      debug:
+#        msg: Hello {{ URL_TASK1 }}
+
+## Tasks level variables are going have the scope to the only task on where it is declared.
+
+- name: Dmeo on same var from play and task
   hosts: all
-  become: yes
+  vars:
+    URL: play.example.com
   tasks:
-    - name: inven variable
+    - name: Print URL
       debug:
-        msg: HELLO, {{ URL_INV }}
+        msg: Hello , {{ URL }}
+      vars:
+        URL: task.example.com
+    - name: Print URL
+      debug:
+        msg: Hello , {{ URL }}
+
+## Task variables have high precedence than play variables.
+
+- name: Demo on CLI vars
+  hosts: all
+  tasks:
+    - name: Print URL from CLI
+      debug:
+        msg: Hello, {{ URL_CLI }}
+
+
+- name: Demo on vars from inventory
+  hosts: all
+  tasks:
+    - name: Print URL from INV
+      debug:
+        msg: Hello, {{ URL_INV }}
