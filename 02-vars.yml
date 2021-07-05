@@ -18,5 +18,5 @@
       debug:
         msg: Hello {{ URL_PLAY }}
     - name: varibale enter through CLI
-        debug:
-          msg: Hello {{ URL_CLI }}
+      debug:
+        msg: Hello {{ URL_CLI }}
