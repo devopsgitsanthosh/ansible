@@ -1,7 +1,7 @@
-- name: call data from task
-  hosts: all
-  roles:
-    - sample
-      - name: print variable
-       debug:
-         msg: variable {{ URL }}
+- name: say hello from role
+  debug:
+    msg: Hello from Roles
+
+- name: Print URL
+  debug:
+    msg: URL = {{ URL }}
