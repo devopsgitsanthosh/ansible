@@ -1,7 +1,6 @@
-- name: say hello from role
-  debug:
-    msg: Hello from Roles
-
-- name: Print URL
-  debug:
-    msg: URL = {{ URL }}
+- name: Demo on roles
+  hosts: all
+  vars:
+    URL: play.exmaple.com
+  roles:
+    - sample
