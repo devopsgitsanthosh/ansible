@@ -1,4 +1,4 @@
--name: call data from task
- hosts: all
- roles:
-   - sample
+- name: call data from task
+  hosts: all
+  roles:
+    - sample

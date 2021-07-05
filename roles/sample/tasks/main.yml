@@ -1,3 +1,3 @@
-- name: print some name
-  debug:
+-  name: print data
+   debug:
     msg: hello from task
