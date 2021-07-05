@@ -23,5 +23,5 @@
 - name: Demo of vars on Play level
   hosts: all
   tasks:
-    debug:
-      msg: {{ URL_INV }}
+      debug:
+        msg: {{ URL_INV }}  :
