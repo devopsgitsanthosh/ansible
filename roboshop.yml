@@ -1,4 +1,5 @@
 - name: install nginx
   hosts: forntend
+  become: yes
   roles:
     - frontend
