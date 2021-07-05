@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/ansible.iml" filepath="$PROJECT_DIR$/ansible.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../shell-scripting/instance-create/instance-create.iml" filepath="$PROJECT_DIR$/../shell-scripting/instance-create/instance-create.iml" />
     </modules>
   </component>
 </project>
