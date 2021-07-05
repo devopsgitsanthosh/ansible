@@ -1,11 +1,1 @@
 {
-  "Comment": "CREATE/DELETE/UPSERT a record ",
-  "Changes": [{
-    "Action": "UPSERT",
-    "ResourceRecordSet": {
-      "Name": "COMPONENT.devopsb55.tk",
-      "Type": "A",
-      "TTL": 300,
-      "ResourceRecords": [{ "Value": "IPADDRESS"}]
-    }}]
-}
