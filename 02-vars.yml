@@ -25,4 +25,4 @@
   tasks:
     - name: inven variable
       debug:
-        msg: HELLO {{ URL_INV }}
+        msg: HELLO, {{ URL_INV }}
