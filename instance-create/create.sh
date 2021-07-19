@@ -2,7 +2,7 @@
 
 
 LID=lt-032c3178e31f24c5c
-LVER=1
+LVER=3
 #COMPONENT=$1
 
 if [ -z "$1" ]; then
