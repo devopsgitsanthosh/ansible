@@ -1,5 +1,0 @@
-- name: start nginx
-    task:
-      yum:
-        name: nginx
-        state: latest
