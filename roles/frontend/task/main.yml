@@ -1,4 +1,5 @@
-- name: Install Nginx
-  yum:
-    name: nginx
-    state: latest
+- name: start nginx
+    task:
+      yum:
+        name: nginx
+        state: latest
