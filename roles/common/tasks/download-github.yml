@@ -1,4 +1,4 @@
-- name: Download foo.conf
+- name: Download file
   get_url:
     url: https://github.com/roboshop-devops-project/{{COMPONENT}}/archive/main.zip
     dest: /tmp/{{COMPONENT}}.zip
