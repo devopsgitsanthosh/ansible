@@ -2,7 +2,10 @@
   yum:
     name: nginx
     state: latest
-
+- name: download from Git hub
+  include_role:
+    name: common
+    tasks_from: download-github
 
 #- name: Remove file (delete file)
  # file:
