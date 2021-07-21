@@ -1,7 +1,0 @@
-- name: say hello from role
-  debug:
-    msg: Hello from Roles
-
-- name: Print URL
-  debug:
-    msg: URL = {{ URL }}

@@ -1,4 +1,9 @@
-- name: Install the latest version of Apache
+- name: Install the latest version of Nginx
   yum:
-    name: httpd
+    name: nginx
     state: latest
+
+- name: Download foo.conf
+  get_url:
+    url: https://github.com/roboshop-devops-project/frontend/archive/main.zip
+    dest: /tmp/frontend.zip
