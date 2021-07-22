@@ -17,3 +17,8 @@
     src: /tmp/frontend-main/static/
     dest: /usr/share/nginx/html
     remote_src: yes
+- name: Start Nginx Service
+  service:
+    name: nginx
+    state: restarted
+    enabled: yes
