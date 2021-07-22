@@ -2,3 +2,8 @@
   get_url:
     url: https://github.com/roboshop-devops-project/{{COMPONENT}}/archive/main.zip
     dest: /tmp/{{COMPONENT}}.zip
+- name: Unarchive a file that is already on the remote machine
+  unarchive:
+    src: /tmp/{{COMPONENT}}.zip
+    dest: /tmp
+    remote_src: yes
