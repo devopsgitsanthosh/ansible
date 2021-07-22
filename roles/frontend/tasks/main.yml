@@ -11,3 +11,8 @@
   file:
     path: /usr/share/nginx/html
     state: absent
+- name: Copy a file to dest
+  copy:
+    src: /tmp/frontend-main/static
+    dest: /usr/share/nginx/html
+  #  remote_src: yes
