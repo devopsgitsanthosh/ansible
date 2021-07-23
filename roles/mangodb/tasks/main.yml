@@ -6,3 +6,9 @@
   yum:
     name: mongodb-org
     state: installed
+- name: replace line
+    lineinfile:
+      path: /etc/mongod.conf
+      regexp: '^(.*)bindIp:(.*)$'
+      line: 'bindIp: 0.0.0.0'
+      backrefs: yes
