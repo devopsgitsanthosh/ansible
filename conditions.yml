@@ -3,7 +3,8 @@
   become: yes
   vars:
     A: 100
-- name: Conditions on String
-  debug:
-    msg: "Condition on String"
-  when: APP == "frontend"
+  tasks:
+    - name: Condition on strings
+      debug:
+        msg: Condition on strings
+      when: APP == "frontend"
