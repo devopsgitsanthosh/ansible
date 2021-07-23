@@ -12,12 +12,20 @@
       regexp: '^(.*)bindIp:(.*)$'
       line: '  bindIp: 0.0.0.0'
       backrefs: yes
-- name: download from Git hub
-  include_role:
-    name: common
-    tasks_from: download-github
+
 - name: Service start mongoDB
   systemd:
     name: mongod
     state: restarted
     enabled: yes
+- name: download from Git hub
+  include_role:
+    name: common
+    tasks_from: download-github
+- name: Load Schema
+  shell: mongo < {{ item }}
+  args:
+    chdir: /tmp/mongodb-main/
+  loop:
+    - catalogue.js
+    - users.js
