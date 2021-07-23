@@ -2,7 +2,7 @@
   hosts: all
   become: yes
   vars:
-    A==100
+    A ==100
 - name: Conditions on String
   debug:
     msg: "Condition on String"
