@@ -17,7 +17,7 @@
     name: common
     tasks_from: download-github
 - name: Service start mongoDB
-  service:
+  systemd:
     name: mongod
     state: restarted
     enabled: yes
