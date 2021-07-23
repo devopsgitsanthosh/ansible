@@ -3,7 +3,7 @@
   become: yes
   vars:
     A: 100
-    INSTALL: false
+    INSTALL: true
   tasks:
     - name: Condition on strings
       debug:
