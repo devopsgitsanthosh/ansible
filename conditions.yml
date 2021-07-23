@@ -8,3 +8,7 @@
       debug:
         msg: Condition on strings
       when: APP == "frontend"
+    - name: Condition on number
+      debug:
+        msg: Condition on num
+      when: A == 101
