@@ -10,6 +10,6 @@
       when: APP == "frontend"
     - name: Condition on number
       debug:
-        msg: Condition on num
+        msg: Condition on numBER
       #when: A == 101
-      when: A == 50
+      when: A > 50
