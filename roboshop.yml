@@ -1,5 +1,10 @@
 - name: roboshop
   hosts: all
   become: yes
-  roles:
-    - frontend
+  tasks:
+    - name: install nginx frontend
+      import_role:
+        name: frontend
+    - name: install mongodb
+        import_role:
+          name: frontend
