@@ -6,7 +6,7 @@
       import_role:
         name: frontend
       when: APP=="frontend"
-    - name: install nginx frontend
+    - name: install mongodb frontend
       import_role:
           name: mangodb
       when: APP=="mangodb"
