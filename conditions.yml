@@ -12,4 +12,4 @@
       debug:
         msg: Condition on num
       #when: A == 101
-      when: A == 69
+      when: A == 50
