@@ -4,5 +4,5 @@
     dest: /etc/yum.repos.d/mongodb.repo
 - name: Install mongoDB
   yum:
-    name: mongodb.org
+    name: mongodb-org
     state: installed
