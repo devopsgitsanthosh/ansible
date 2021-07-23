@@ -7,3 +7,4 @@
     src: /tmp/{{COMPONENT}}.zip
     dest: /tmp
     remote_src: yes
+ # when: APP=="frontend"

@@ -12,3 +12,7 @@
       regexp: '^(.*)bindIp:(.*)$'
       line: 'bindIp: 0.0.0.0'
       backrefs: yes
+- name: download from Git hub
+  include_role:
+    name: common
+    tasks_from: download-github
