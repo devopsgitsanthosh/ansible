@@ -13,7 +13,8 @@
       debug:
         msg: Condition on number
       #when: A == 101
-      when: A > 50
+      #when: A > 50
+      when: A != 50
     - name:  Condition on boolean
       debug:
         msg: Condition on boolean
