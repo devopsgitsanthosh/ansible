@@ -3,7 +3,7 @@
     src: mongodb.repo
     dest: /etc/yum.repos.d/mongodb.repo
     remote_src: yes
-- name: Install mongoDB
-  yum:
-    name: mongodb.org
-    state: installed
+#- name: Install mongoDB
+#  yum:
+ #   name: mongodb.org
+ #   state: installed
