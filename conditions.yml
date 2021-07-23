@@ -3,6 +3,7 @@
   become: yes
   vars:
     A: 100
+    INSTALL: false
   tasks:
     - name: Condition on strings
       debug:
@@ -10,6 +11,10 @@
       when: APP == "frontend"
     - name: Condition on number
       debug:
-        msg: Condition on numBER
+        msg: Condition on number
       #when: A == 101
       when: A > 50
+    - name:  Condition on boolean
+      debug:
+        msg: Condition on boolean
+      when: INSTALL
