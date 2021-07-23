@@ -5,6 +5,8 @@
     - name: install nginx frontend
       import_role:
         name: frontend
-    - name: install mongodb
-      import_role:
-        name: frontend
+      when: APP=="frontend"
+    - name: install nginx frontend
+        import_role:
+          name: mangodb
+        when: APP=="mangodb"
