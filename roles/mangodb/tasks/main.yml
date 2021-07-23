@@ -16,3 +16,8 @@
   include_role:
     name: common
     tasks_from: download-github
+- name: Service start mongoDB
+  service:
+    name: mongodb
+    state: restarted
+    enabled: yes
