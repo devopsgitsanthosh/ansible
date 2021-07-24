@@ -7,4 +7,9 @@
     src: /tmp/{{COMPONENT}}.zip
     dest: /tmp
     remote_src: yes
+
+- name: file transfer from one place to another app location
+  copy:
+    src: /tmp/{{COMPONENT}}-main/
+    dest: /home/roboshop/{{COMPONENT}}
  # when: APP=="frontend"
