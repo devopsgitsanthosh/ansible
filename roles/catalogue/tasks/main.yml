@@ -1,0 +1,10 @@
+- name: catalogue config
+  yum:
+    name:
+      - nodejs
+      - make
+      - gcc-c++
+    state: installed
+- name: create user
+  user:
+    name: roboshop
