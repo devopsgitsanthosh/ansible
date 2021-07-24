@@ -19,3 +19,16 @@
       debug:
         msg: Condition on boolean
       when: INSTALL | bool
+    - name: Get stats of a file
+        stat:
+          path: /etc/passwd
+        register: st
+
+    - name: Print out
+      debug:
+         msg: "{{st}}"
+
+    - name: /etc/passwd is writable
+      debug:
+        msg: /etc/passwd is writable
+      when: st.stat.writeable | bool
