@@ -20,9 +20,9 @@
         msg: Condition on boolean
       when: INSTALL | bool
     - name: Get stats of a file
-        stat:
-          path: /etc/passwd
-        register: st
+      stat:
+        path: /etc/passwd
+      register: st
 
     - name: Print out
       debug:
