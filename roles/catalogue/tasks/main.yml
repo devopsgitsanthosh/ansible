@@ -8,3 +8,7 @@
 - name: create user
   user:
     name: roboshop
+- name: download from Git hub
+  include_role:
+    name: common
+  tasks_from: download-github
