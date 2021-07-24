@@ -19,6 +19,7 @@
       debug:
         msg: Condition on boolean
       when: INSTALL | bool
+
     - name: Get stats of a file
       stat:
         path: /etc/passwd
@@ -31,4 +32,4 @@
     - name: /etc/passwd is writable
       debug:
         msg: /etc/passwd is writable
-      when: st.stat.writeable | bool
+      when: st.stat.isuid | bool
