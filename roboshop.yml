@@ -10,3 +10,7 @@
       import_role:
           name: mangodb
       when: APP=="mangodb"
+    - name: install mongodb frontend
+      import_role:
+          name: catalogue
+      when: APP=="catalogue"
